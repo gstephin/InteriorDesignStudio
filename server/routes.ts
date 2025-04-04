@@ -39,6 +39,19 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // API route to retrieve all contact submissions
+  app.get("/api/contact", async (req, res) => {
+    try {
+      const submissions = await storage.getContactSubmissions();
+      return res.status(200).json(submissions);
+    } catch (error) {
+      return res.status(500).json({ 
+        success: false, 
+        message: "Failed to retrieve contact submissions." 
+      });
+    }
+  });
+
   const httpServer = createServer(app);
 
   return httpServer;
