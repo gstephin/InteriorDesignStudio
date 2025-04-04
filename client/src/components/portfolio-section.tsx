@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-// Define direct URLs to images in the public folder
-const image1 = "/images/bedroom.png";
-const image2 = "/images/bedroom1.png";
-const image3 = "/images/commonarea.png";
-const image4 = "/images/dining.png";
-const image5 = "/images/kitchen.png";
-const image6 = "/images/kitchen2.png";
-const image7 = "/images/livingroom.png";
-const image8 = "/images/washcounter.png";
-const image9 = "/images/bedroom3.png";
+// Use the new SVG placeholders
+const image1 = "/portfolio-images/interior1.svg";
+const image2 = "/portfolio-images/interior2.svg";
+const image3 = "/portfolio-images/interior3.svg";
+const image4 = "/portfolio-images/interior4.svg";
+const image5 = "/portfolio-images/interior5.svg";
+const image6 = "/portfolio-images/interior6.svg";
+const image7 = "/portfolio-images/interior7.svg";
+const image8 = "/portfolio-images/interior8.svg";
+const image9 = "/portfolio-images/interior9.svg";
 
 // Project types
 type ProjectCategory = 'all' | 'residential' | 'commercial' | 'modern' | 'traditional';
