@@ -1,7 +1,7 @@
 import express from 'express';
 import serverless from 'serverless-http';
-import { db } from '../../server/db.js';
-import { contactSubmissions } from '../../shared/schema.js';
+import { db } from './db.js';
+import { contactSubmissions } from './schema.js';
 
 const app = express();
 app.use(express.json());
