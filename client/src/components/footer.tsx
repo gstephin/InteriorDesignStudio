@@ -113,8 +113,8 @@ export default function Footer() {
             <a href="#" className="text-gray-400 hover:text-[#A67F5D] text-sm transition-colors">
               Terms of Service
             </a>
-            <a href="#" className="text-gray-400 hover:text-[#A67F5D] text-sm transition-colors">
-              Sitemap
+            <a href="/admin" className="text-gray-400 hover:text-[#A67F5D] text-sm transition-colors">
+              Admin
             </a>
           </div>
         </div>
