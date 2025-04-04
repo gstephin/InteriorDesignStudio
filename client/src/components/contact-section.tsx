@@ -48,7 +48,7 @@ export default function ContactSection() {
 
   const mutation = useMutation({
     mutationFn: (data: ContactFormValues) => {
-      return apiRequest('POST', '/api/contact', data);
+      return apiRequest('POST', '/.netlify/functions/api/contact', data);
     },
     onSuccess: () => {
       toast({

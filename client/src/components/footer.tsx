@@ -46,6 +46,7 @@ export default function Footer() {
                 { id: '#home', label: 'Home' },
                 { id: '#services', label: 'Services' },
                 { id: '#about', label: 'About' },
+                { id: '#portfolio', label: 'Portfolio' },
                 { id: '#contact', label: 'Contact' },
               ].map((link) => (
                 <li key={link.id}>

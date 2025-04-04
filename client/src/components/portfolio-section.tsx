@@ -1,177 +1,180 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Project } from '../types';
+import { motion } from 'framer-motion';
 
+// Project types
 type ProjectCategory = 'all' | 'residential' | 'commercial' | 'modern' | 'traditional';
 
-const portfolioProjects: (Project & { categories: ProjectCategory[] })[] = [
+interface Project {
+  id: number;
+  title: string;
+  categories: ProjectCategory[];
+  imageUrl: string;
+  altText: string;
+}
+
+// Sample portfolio projects using uploaded assets
+const projects: Project[] = [
   {
     id: 1,
-    title: "Modern Living Room",
-    categories: ["residential", "modern"],
-    imageUrl: "/assets/portfolio/interior-1.jpeg",
-    altText: "Modern living room with stylish furnishings"
+    title: "Modern Living Room Design",
+    categories: ['residential', 'modern'],
+    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.05%20PM.jpeg",
+    altText: "Modern living room with elegant furniture"
   },
   {
     id: 2,
-    title: "Elegant Dining Space",
-    categories: ["residential", "traditional"],
-    imageUrl: "/assets/portfolio/interior-2.jpeg",
-    altText: "Elegant dining area with wooden furniture"
+    title: "Kitchen Renovation",
+    categories: ['residential', 'modern'],
+    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.10%20PM%20(1).jpeg",
+    altText: "Contemporary kitchen design with minimalist elements"
   },
   {
     id: 3,
-    title: "Contemporary Kitchen",
-    categories: ["residential", "modern"],
-    imageUrl: "/assets/portfolio/interior-3.jpeg",
-    altText: "Contemporary kitchen with modern appliances"
+    title: "Luxury Bedroom Suite",
+    categories: ['residential', 'traditional'],
+    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.10%20PM.jpeg",
+    altText: "Luxurious bedroom with custom furniture"
   },
   {
     id: 4,
-    title: "Luxurious Bedroom",
-    categories: ["residential", "traditional"],
-    imageUrl: "/assets/portfolio/interior-4.jpeg",
-    altText: "Luxurious bedroom with elegant decor"
+    title: "Office Space Design",
+    categories: ['commercial', 'modern'],
+    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.15%20PM.jpeg",
+    altText: "Modern office space design with ergonomic features"
   },
   {
     id: 5,
-    title: "Minimalist Bathroom",
-    categories: ["residential", "modern"],
-    imageUrl: "/assets/portfolio/interior-5.jpeg",
-    altText: "Minimalist bathroom design with clean lines"
+    title: "Traditional Dining Area",
+    categories: ['residential', 'traditional'],
+    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.23%20PM.jpeg",
+    altText: "Traditional dining room with elegant details"
   },
   {
     id: 6,
-    title: "Office Space",
-    categories: ["commercial", "modern"],
-    imageUrl: "/assets/portfolio/interior-6.jpeg",
-    altText: "Modern office space with professional design"
+    title: "Contemporary Bathroom",
+    categories: ['residential', 'modern'],
+    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.26%20PM%20(1).jpeg",
+    altText: "Contemporary bathroom design with luxury fixtures"
   },
   {
     id: 7,
-    title: "Cozy Living Area",
-    categories: ["residential", "traditional"],
-    imageUrl: "/assets/portfolio/interior-7.jpeg",
-    altText: "Cozy living area with comfortable furniture"
+    title: "Hotel Lobby Design",
+    categories: ['commercial', 'modern'],
+    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.26%20PM.jpeg",
+    altText: "Elegant hotel lobby with custom lighting"
   },
   {
     id: 8,
-    title: "Commercial Reception",
-    categories: ["commercial", "modern"],
-    imageUrl: "/assets/portfolio/interior-8.jpeg",
-    altText: "Modern commercial reception area"
+    title: "Classic Living Space",
+    categories: ['residential', 'traditional'],
+    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.28%20PM%20(1).jpeg",
+    altText: "Classic living room with traditional elements"
   },
   {
     id: 9,
-    title: "Stylish Home Office",
-    categories: ["residential", "modern"],
-    imageUrl: "/assets/portfolio/interior-9.jpeg",
-    altText: "Stylish home office setup with organized workspace"
+    title: "Executive Office Suite",
+    categories: ['commercial', 'modern'],
+    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.29%20PM.jpeg",
+    altText: "Executive office with premium design elements"
   }
 ];
 
 export default function PortfolioSection() {
-  const [filter, setFilter] = useState<ProjectCategory>('all');
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-
-  const filteredProjects = filter === 'all' 
-    ? portfolioProjects 
-    : portfolioProjects.filter(project => project.categories.includes(filter));
-
+  const [activeCategory, setActiveCategory] = useState<ProjectCategory>('all');
+  
+  const filteredProjects = activeCategory === 'all' 
+    ? projects 
+    : projects.filter(project => project.categories.includes(activeCategory));
+  
   return (
-    <section id="portfolio" className="py-20 bg-white">
+    <section id="portfolio" className="py-20 bg-[#f5f5f5]">
       <div className="container mx-auto px-4">
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-[#3A3A3A] mb-4">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
             Our Portfolio
           </h2>
           <div className="w-20 h-1 bg-[#A67F5D] mx-auto mb-6"></div>
           <p className="max-w-xl mx-auto text-gray-600">
-            Explore our diverse collection of interior design projects across various styles and spaces.
+            Explore our diverse collection of interior design projects showcasing our expertise and creative vision.
           </p>
         </motion.div>
         
-        {/* Portfolio Filters */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <FilterButton 
             label="All" 
-            isActive={filter === 'all'} 
-            onClick={() => setFilter('all')} 
+            isActive={activeCategory === 'all'} 
+            onClick={() => setActiveCategory('all')} 
           />
           <FilterButton 
             label="Residential" 
-            isActive={filter === 'residential'} 
-            onClick={() => setFilter('residential')} 
+            isActive={activeCategory === 'residential'} 
+            onClick={() => setActiveCategory('residential')} 
           />
           <FilterButton 
             label="Commercial" 
-            isActive={filter === 'commercial'} 
-            onClick={() => setFilter('commercial')} 
+            isActive={activeCategory === 'commercial'} 
+            onClick={() => setActiveCategory('commercial')} 
           />
           <FilterButton 
             label="Modern" 
-            isActive={filter === 'modern'} 
-            onClick={() => setFilter('modern')} 
+            isActive={activeCategory === 'modern'} 
+            onClick={() => setActiveCategory('modern')} 
           />
           <FilterButton 
             label="Traditional" 
-            isActive={filter === 'traditional'} 
-            onClick={() => setFilter('traditional')} 
+            isActive={activeCategory === 'traditional'} 
+            onClick={() => setActiveCategory('traditional')} 
           />
         </div>
         
-        {/* Portfolio Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <AnimatePresence>
-            {filteredProjects.map((project) => (
-              <motion.div
-                key={project.id}
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.5 }}
-                className="portfolio-item"
-              >
-                <div className="group relative overflow-hidden rounded-lg shadow-md">
-                  <img 
-                    src={project.imageUrl} 
-                    alt={project.altText}
-                    className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" 
-                  />
-                  <div className="absolute inset-0 bg-[#3A3A3A] bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
-                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <button 
-                        onClick={() => setSelectedProject(project)}
-                        className="bg-white text-[#3A3A3A] px-5 py-2 rounded-full font-medium hover:bg-[#A67F5D] hover:text-white transition-colors"
-                      >
-                        View Details
-                      </button>
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.6 }}
+        >
+          {filteredProjects.map((project) => (
+            <motion.div
+              key={project.id}
+              className="group relative overflow-hidden rounded-lg shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.5, delay: project.id * 0.1 }}
+            >
+              <div className="aspect-w-4 aspect-h-3 relative">
+                <img 
+                  src={project.imageUrl} 
+                  alt={project.altText} 
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <div className="p-6 text-white">
+                    <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                    <div className="flex flex-wrap gap-2">
+                      {project.categories.map((category) => (
+                        <span 
+                          key={category} 
+                          className="text-xs text-[#A67F5D] bg-white bg-opacity-20 px-2 py-1 rounded"
+                        >
+                          {category.charAt(0).toUpperCase() + category.slice(1)}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </div>
-                <div className="pt-4">
-                  <h3 className="text-lg font-heading font-semibold text-[#3A3A3A]">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-600">
-                    {project.categories.map(c => c.charAt(0).toUpperCase() + c.slice(1)).join(' | ')}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </AnimatePresence>
-        </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
-
-      {/* Project Details Modal - would be implemented for a real application */}
-      {/* This would use Shadcn Dialog component */}
     </section>
   );
 }
@@ -186,10 +189,10 @@ function FilterButton({ label, isActive, onClick }: FilterButtonProps) {
   return (
     <button
       onClick={onClick}
-      className={`px-6 py-2 rounded font-medium focus:outline-none transition-colors ${
-        isActive
-          ? 'bg-[#A67F5D] text-white'
-          : 'bg-[#F7F7F7] text-[#3A3A3A] hover:bg-gray-200'
+      className={`px-4 py-2 rounded-full font-medium transition-colors ${
+        isActive 
+          ? 'bg-[#A67F5D] text-white' 
+          : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
       }`}
     >
       {label}

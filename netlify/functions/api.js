@@ -18,7 +18,7 @@ app.post('/.netlify/functions/api/contact', async (req, res) => {
     const submittedAt = new Date().toISOString();
     
     const result = await pool.query(
-      'INSERT INTO "contactSubmissions" (name, email, phone, service, message, "submittedAt") VALUES ($1, $2, $3, $4, $5, $6) RETURNING *',
+      `INSERT INTO "contactSubmissions" (name, email, phone, service, message, "submittedAt") VALUES ($1, $2, $3, $4, $5, $6) RETURNING *`,
       [name, email, phone, service, message, submittedAt]
     );
     
