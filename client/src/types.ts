@@ -25,15 +25,6 @@ export interface TeamMember {
   imageUrl: string;
 }
 
-// Testimonial Types
-export interface Testimonial {
-  id: number;
-  quote: string;
-  name: string;
-  role: string;
-  imageUrl: string;
-}
-
 // Hero Slide Types
 export interface HeroSlide {
   id: number;
