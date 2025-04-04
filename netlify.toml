@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run build && cp -r public/assets dist/public/"
   publish = "dist/public"
   
 [functions]

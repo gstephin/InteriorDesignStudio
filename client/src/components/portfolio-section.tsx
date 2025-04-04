@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-
-// Use simple image paths
-const image1 = "/assets/portfolio/img1.png";
-const image2 = "/assets/portfolio/img2.png";
-const image3 = "/assets/portfolio/img3.png";
-const image4 = "/assets/portfolio/img4.png";
-const image5 = "/assets/portfolio/img5.png";
-const image6 = "/assets/portfolio/img6.png";
-const image7 = "/assets/portfolio/img7.png";
-const image8 = "/assets/portfolio/img8.png";
-const image9 = "/assets/portfolio/img9.png";
+import {
+  PlaceholderImage1,
+  PlaceholderImage2,
+  PlaceholderImage3,
+  PlaceholderImage4,
+  PlaceholderImage5,
+  PlaceholderImage6,
+  PlaceholderImage7,
+  PlaceholderImage8,
+  PlaceholderImage9
+} from './portfolio-placeholders';
 
 // Project types
 type ProjectCategory = 'all' | 'residential' | 'commercial' | 'modern' | 'traditional';
@@ -19,73 +19,73 @@ interface Project {
   id: number;
   title: string;
   categories: ProjectCategory[];
-  imageUrl: string;
+  ImageComponent: React.FC;
   altText: string;
 }
 
-// Sample portfolio projects using uploaded assets
+// Sample portfolio projects using SVG components
 const projects: Project[] = [
   {
     id: 1,
     title: "Modern Living Room Design",
     categories: ['residential', 'modern'],
-    imageUrl: image1,
+    ImageComponent: PlaceholderImage1,
     altText: "Modern living room with elegant furniture"
   },
   {
     id: 2,
     title: "Kitchen Renovation",
     categories: ['residential', 'modern'],
-    imageUrl: image2,
+    ImageComponent: PlaceholderImage2,
     altText: "Contemporary kitchen design with minimalist elements"
   },
   {
     id: 3,
     title: "Luxury Bedroom Suite",
     categories: ['residential', 'traditional'],
-    imageUrl: image3,
+    ImageComponent: PlaceholderImage3,
     altText: "Luxurious bedroom with custom furniture"
   },
   {
     id: 4,
     title: "Office Space Design",
     categories: ['commercial', 'modern'],
-    imageUrl: image4,
+    ImageComponent: PlaceholderImage4,
     altText: "Modern office space design with ergonomic features"
   },
   {
     id: 5,
     title: "Traditional Dining Area",
     categories: ['residential', 'traditional'],
-    imageUrl: image5,
+    ImageComponent: PlaceholderImage5,
     altText: "Traditional dining room with elegant details"
   },
   {
     id: 6,
     title: "Contemporary Bathroom",
     categories: ['residential', 'modern'],
-    imageUrl: image6,
+    ImageComponent: PlaceholderImage6,
     altText: "Contemporary bathroom design with luxury fixtures"
   },
   {
     id: 7,
     title: "Hotel Lobby Design",
     categories: ['commercial', 'modern'],
-    imageUrl: image7,
+    ImageComponent: PlaceholderImage7,
     altText: "Elegant hotel lobby with custom lighting"
   },
   {
     id: 8,
     title: "Classic Living Space",
     categories: ['residential', 'traditional'],
-    imageUrl: image8,
+    ImageComponent: PlaceholderImage8,
     altText: "Classic living room with traditional elements"
   },
   {
     id: 9,
     title: "Executive Office Suite",
     categories: ['commercial', 'modern'],
-    imageUrl: image9,
+    ImageComponent: PlaceholderImage9,
     altText: "Executive office with premium design elements"
   }
 ];
@@ -161,11 +161,9 @@ export default function PortfolioSection() {
               transition={{ duration: 0.5, delay: project.id * 0.1 }}
             >
               <div className="aspect-w-4 aspect-h-3 relative">
-                <img 
-                  src={project.imageUrl} 
-                  alt={project.altText} 
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+                <div className="w-full h-64 overflow-hidden">
+                  <project.ImageComponent />
+                </div>
                 <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6 text-white">
                     <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
