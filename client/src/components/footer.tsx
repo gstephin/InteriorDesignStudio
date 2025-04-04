@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="font-heading font-bold text-xl mb-4">
-              Elegance<span className="text-[#A67F5D]">.</span>
+              Ktisis <span className="text-[#A67F5D]">Interiors</span>
             </h3>
             <p className="text-gray-300 mb-6">
               Creating beautiful, functional spaces that inspire and delight.
@@ -107,7 +107,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Elegance Interiors. All rights reserved.
+            © {new Date().getFullYear()} Ktisis Interiors. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-[#A67F5D] text-sm transition-colors">
