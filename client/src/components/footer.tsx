@@ -1,4 +1,4 @@
-import { Instagram, StarHalf, Facebook, Linkedin } from 'lucide-react';
+import { Instagram, Facebook, Phone } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
@@ -27,17 +27,14 @@ export default function Footer() {
               Creating beautiful, functional spaces that inspire and delight.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-[#A67F5D] transition-colors">
+              <a href="https://www.instagram.com/ktisis_interiors/" className="text-white hover:text-[#A67F5D] transition-colors" target="_blank" rel="noopener noreferrer">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-white hover:text-[#A67F5D] transition-colors">
-                <StarHalf className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-white hover:text-[#A67F5D] transition-colors">
+              <a href="https://www.facebook.com/ktisisinteriors" className="text-white hover:text-[#A67F5D] transition-colors" target="_blank" rel="noopener noreferrer">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-white hover:text-[#A67F5D] transition-colors">
-                <Linkedin className="h-5 w-5" />
+              <a href="https://wa.me/919947386281" className="text-white hover:text-[#A67F5D] transition-colors" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"></path><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z"></path><path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z"></path><path d="M9 14a.5.5 0 0 0 .5.5c.28 0 .5-.2.5-.5s.22-.5.5-.5.5.2.5.5.22.5.5.5.5-.2.5-.5"></path></svg>
               </a>
             </div>
           </div>

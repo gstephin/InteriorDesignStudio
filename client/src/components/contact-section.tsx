@@ -239,8 +239,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Studio Address</h4>
-                  <p className="text-gray-300">123 Design Avenue, Creative District</p>
-                  <p className="text-gray-300">New York, NY 10001</p>
+                  <p className="text-gray-300">14 E DD Sunset Island Apartments</p>
+                  <p className="text-gray-300">Kochi, Kerala, India</p>
                 </div>
               </div>
               
@@ -250,8 +250,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Email Us</h4>
-                  <p className="text-gray-300">info@ktisisinteriors.com</p>
-                  <p className="text-gray-300">projects@ktisisinteriors.com</p>
+                  <p className="text-gray-300">ktisisinteriors744@gmail.com</p>
                 </div>
               </div>
               
@@ -261,8 +260,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Call Us</h4>
-                  <p className="text-gray-300">+1 (212) 555-7890</p>
-                  <p className="text-gray-300">+1 (212) 555-7891</p>
+                  <p className="text-gray-300">+91 9847782499</p>
+                  <p className="text-gray-300">WhatsApp: +91 9947386281</p>
                 </div>
               </div>
               
@@ -281,10 +280,9 @@ export default function ContactSection() {
             <div className="mt-10">
               <h4 className="font-semibold mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <SocialLink icon={<Instagram className="h-6 w-6" />} href="#" />
-                <SocialLink icon={<StarHalf className="h-6 w-6" />} href="#" />
-                <SocialLink icon={<Facebook className="h-6 w-6" />} href="#" />
-                <SocialLink icon={<Linkedin className="h-6 w-6" />} href="#" />
+                <SocialLink icon={<Instagram className="h-6 w-6" />} href="https://www.instagram.com/ktisis_interiors/" />
+                <SocialLink icon={<Facebook className="h-6 w-6" />} href="https://www.facebook.com/ktisisinteriors" />
+                <SocialLink icon={<Phone className="h-6 w-6" />} href="https://wa.me/919947386281" />
               </div>
             </div>
           </motion.div>
