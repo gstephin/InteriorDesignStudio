@@ -12,69 +12,80 @@ interface Project {
   altText: string;
 }
 
+// Use relative paths for images
+const image1 = '/attached_assets/WhatsApp Image 2025-01-10 at 10.35.05 PM.jpeg';
+const image2 = '/attached_assets/WhatsApp Image 2025-01-10 at 10.35.10 PM (1).jpeg';
+const image3 = '/attached_assets/WhatsApp Image 2025-01-10 at 10.35.10 PM.jpeg';
+const image4 = '/attached_assets/WhatsApp Image 2025-01-10 at 10.35.15 PM.jpeg';
+const image5 = '/attached_assets/WhatsApp Image 2025-01-10 at 10.35.23 PM.jpeg';
+const image6 = '/attached_assets/WhatsApp Image 2025-01-10 at 10.35.26 PM (1).jpeg';
+const image7 = '/attached_assets/WhatsApp Image 2025-01-10 at 10.35.26 PM.jpeg';
+const image8 = '/attached_assets/WhatsApp Image 2025-01-10 at 10.35.28 PM (1).jpeg';
+const image9 = '/attached_assets/WhatsApp Image 2025-01-10 at 10.35.29 PM.jpeg';
+
 // Sample portfolio projects using uploaded assets
 const projects: Project[] = [
   {
     id: 1,
     title: "Modern Living Room Design",
     categories: ['residential', 'modern'],
-    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.05%20PM.jpeg",
+    imageUrl: image1,
     altText: "Modern living room with elegant furniture"
   },
   {
     id: 2,
     title: "Kitchen Renovation",
     categories: ['residential', 'modern'],
-    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.10%20PM%20(1).jpeg",
+    imageUrl: image2,
     altText: "Contemporary kitchen design with minimalist elements"
   },
   {
     id: 3,
     title: "Luxury Bedroom Suite",
     categories: ['residential', 'traditional'],
-    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.10%20PM.jpeg",
+    imageUrl: image3,
     altText: "Luxurious bedroom with custom furniture"
   },
   {
     id: 4,
     title: "Office Space Design",
     categories: ['commercial', 'modern'],
-    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.15%20PM.jpeg",
+    imageUrl: image4,
     altText: "Modern office space design with ergonomic features"
   },
   {
     id: 5,
     title: "Traditional Dining Area",
     categories: ['residential', 'traditional'],
-    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.23%20PM.jpeg",
+    imageUrl: image5,
     altText: "Traditional dining room with elegant details"
   },
   {
     id: 6,
     title: "Contemporary Bathroom",
     categories: ['residential', 'modern'],
-    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.26%20PM%20(1).jpeg",
+    imageUrl: image6,
     altText: "Contemporary bathroom design with luxury fixtures"
   },
   {
     id: 7,
     title: "Hotel Lobby Design",
     categories: ['commercial', 'modern'],
-    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.26%20PM.jpeg",
+    imageUrl: image7,
     altText: "Elegant hotel lobby with custom lighting"
   },
   {
     id: 8,
     title: "Classic Living Space",
     categories: ['residential', 'traditional'],
-    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.28%20PM%20(1).jpeg",
+    imageUrl: image8,
     altText: "Classic living room with traditional elements"
   },
   {
     id: 9,
     title: "Executive Office Suite",
     categories: ['commercial', 'modern'],
-    imageUrl: "/attached_assets/WhatsApp%20Image%202025-01-10%20at%2010.35.29%20PM.jpeg",
+    imageUrl: image9,
     altText: "Executive office with premium design elements"
   }
 ];
