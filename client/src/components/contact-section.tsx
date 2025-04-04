@@ -103,7 +103,7 @@ export default function ContactSection() {
             </p>
             
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6" data-netlify="true">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6" netlify>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <FormField
                     control={form.control}

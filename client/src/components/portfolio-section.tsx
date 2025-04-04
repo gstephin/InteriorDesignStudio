@@ -2,15 +2,15 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 // Define direct URLs to images in the public folder
-const image1 = "/images/WhatsApp Image 2025-01-10 at 10.35.05 PM.jpeg";
-const image2 = "/images/WhatsApp Image 2025-01-10 at 10.35.10 PM (1).jpeg";
-const image3 = "/images/WhatsApp Image 2025-01-10 at 10.35.10 PM.jpeg";
-const image4 = "/images/WhatsApp Image 2025-01-10 at 10.35.15 PM.jpeg";
-const image5 = "/images/WhatsApp Image 2025-01-10 at 10.35.23 PM.jpeg";
-const image6 = "/images/WhatsApp Image 2025-01-10 at 10.35.26 PM (1).jpeg";
-const image7 = "/images/WhatsApp Image 2025-01-10 at 10.35.26 PM.jpeg";
-const image8 = "/images/WhatsApp Image 2025-01-10 at 10.35.28 PM (1).jpeg";
-const image9 = "/images/WhatsApp Image 2025-01-10 at 10.35.29 PM.jpeg";
+const image1 = "/images/bedroom.png";
+const image2 = "/images/bedroom1.png";
+const image3 = "/images/commonarea.png";
+const image4 = "/images/dining.png";
+const image5 = "/images/kitchen.png";
+const image6 = "/images/kitchen2.png";
+const image7 = "/images/livingroom.png";
+const image8 = "/images/washcounter.png";
+const image9 = "/images/bedroom3.png";
 
 // Project types
 type ProjectCategory = 'all' | 'residential' | 'commercial' | 'modern' | 'traditional';
