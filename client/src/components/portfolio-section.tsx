@@ -7,45 +7,66 @@ type ProjectCategory = 'all' | 'residential' | 'commercial' | 'modern' | 'tradit
 const portfolioProjects: (Project & { categories: ProjectCategory[] })[] = [
   {
     id: 1,
-    title: "Contemporary Apartment",
+    title: "Modern Living Room",
     categories: ["residential", "modern"],
-    imageUrl: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=600&q=80",
-    altText: "Modern living room with large windows"
+    imageUrl: "/assets/portfolio/interior-1.jpeg",
+    altText: "Modern living room with stylish furnishings"
   },
   {
     id: 2,
-    title: "Tech Startup Office",
-    categories: ["commercial", "modern"],
-    imageUrl: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=600&q=80",
-    altText: "Office space with modern furnishings"
+    title: "Elegant Dining Space",
+    categories: ["residential", "traditional"],
+    imageUrl: "/assets/portfolio/interior-2.jpeg",
+    altText: "Elegant dining area with wooden furniture"
   },
   {
     id: 3,
-    title: "Classic Family Home",
-    categories: ["residential", "traditional"],
-    imageUrl: "https://images.unsplash.com/photo-1617806118233-18e1de247200?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=600&q=80",
-    altText: "Traditional dining room with elegant furnishings"
+    title: "Contemporary Kitchen",
+    categories: ["residential", "modern"],
+    imageUrl: "/assets/portfolio/interior-3.jpeg",
+    altText: "Contemporary kitchen with modern appliances"
   },
   {
     id: 4,
-    title: "Urban Bistro",
-    categories: ["commercial", "modern"],
-    imageUrl: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=600&q=80",
-    altText: "Modern restaurant interior with ambient lighting"
+    title: "Luxurious Bedroom",
+    categories: ["residential", "traditional"],
+    imageUrl: "/assets/portfolio/interior-4.jpeg",
+    altText: "Luxurious bedroom with elegant decor"
   },
   {
     id: 5,
-    title: "Scandinavian Loft",
+    title: "Minimalist Bathroom",
     categories: ["residential", "modern"],
-    imageUrl: "https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=600&q=80",
-    altText: "Minimalist bedroom with natural materials"
+    imageUrl: "/assets/portfolio/interior-5.jpeg",
+    altText: "Minimalist bathroom design with clean lines"
   },
   {
     id: 6,
-    title: "Heritage Estate",
+    title: "Office Space",
+    categories: ["commercial", "modern"],
+    imageUrl: "/assets/portfolio/interior-6.jpeg",
+    altText: "Modern office space with professional design"
+  },
+  {
+    id: 7,
+    title: "Cozy Living Area",
     categories: ["residential", "traditional"],
-    imageUrl: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=600&q=80",
-    altText: "Traditional living room with elegant furniture"
+    imageUrl: "/assets/portfolio/interior-7.jpeg",
+    altText: "Cozy living area with comfortable furniture"
+  },
+  {
+    id: 8,
+    title: "Commercial Reception",
+    categories: ["commercial", "modern"],
+    imageUrl: "/assets/portfolio/interior-8.jpeg",
+    altText: "Modern commercial reception area"
+  },
+  {
+    id: 9,
+    title: "Stylish Home Office",
+    categories: ["residential", "modern"],
+    imageUrl: "/assets/portfolio/interior-9.jpeg",
+    altText: "Stylish home office setup with organized workspace"
   }
 ];
 
