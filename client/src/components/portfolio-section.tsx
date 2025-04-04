@@ -1,16 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import {
-  PlaceholderImage1,
-  PlaceholderImage2,
-  PlaceholderImage3,
-  PlaceholderImage4,
-  PlaceholderImage5,
-  PlaceholderImage6,
-  PlaceholderImage7,
-  PlaceholderImage8,
-  PlaceholderImage9
-} from './portfolio-placeholders';
+import { PortfolioItem, PortfolioUploader } from './portfolio-uploader';
 
 // Project types
 type ProjectCategory = 'all' | 'residential' | 'commercial' | 'modern' | 'traditional';
@@ -19,79 +9,85 @@ interface Project {
   id: number;
   title: string;
   categories: ProjectCategory[];
-  ImageComponent: React.FC;
   altText: string;
 }
 
-// Sample portfolio projects using SVG components
+// Sample portfolio projects
 const projects: Project[] = [
   {
     id: 1,
     title: "Modern Living Room Design",
     categories: ['residential', 'modern'],
-    ImageComponent: PlaceholderImage1,
     altText: "Modern living room with elegant furniture"
   },
   {
     id: 2,
     title: "Kitchen Renovation",
     categories: ['residential', 'modern'],
-    ImageComponent: PlaceholderImage2,
     altText: "Contemporary kitchen design with minimalist elements"
   },
   {
     id: 3,
     title: "Luxury Bedroom Suite",
     categories: ['residential', 'traditional'],
-    ImageComponent: PlaceholderImage3,
     altText: "Luxurious bedroom with custom furniture"
   },
   {
     id: 4,
     title: "Office Space Design",
     categories: ['commercial', 'modern'],
-    ImageComponent: PlaceholderImage4,
     altText: "Modern office space design with ergonomic features"
   },
   {
     id: 5,
     title: "Traditional Dining Area",
     categories: ['residential', 'traditional'],
-    ImageComponent: PlaceholderImage5,
     altText: "Traditional dining room with elegant details"
   },
   {
     id: 6,
     title: "Contemporary Bathroom",
     categories: ['residential', 'modern'],
-    ImageComponent: PlaceholderImage6,
     altText: "Contemporary bathroom design with luxury fixtures"
   },
   {
     id: 7,
     title: "Hotel Lobby Design",
     categories: ['commercial', 'modern'],
-    ImageComponent: PlaceholderImage7,
     altText: "Elegant hotel lobby with custom lighting"
   },
   {
     id: 8,
     title: "Classic Living Space",
     categories: ['residential', 'traditional'],
-    ImageComponent: PlaceholderImage8,
     altText: "Classic living room with traditional elements"
   },
   {
     id: 9,
     title: "Executive Office Suite",
     categories: ['commercial', 'modern'],
-    ImageComponent: PlaceholderImage9,
     altText: "Executive office with premium design elements"
   }
 ];
 
 export default function PortfolioSection() {
   const [activeCategory, setActiveCategory] = useState<ProjectCategory>('all');
+  const [isAdmin, setIsAdmin] = useState(false);
+  
+  // Check if we're in admin mode (you can add more secure authentication later)
+  useEffect(() => {
+    const checkAdminMode = () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const isAdminMode = urlParams.get('admin') === 'true';
+      setIsAdmin(isAdminMode);
+    };
+    
+    checkAdminMode();
+    
+    // Listen for hash changes
+    window.addEventListener('popstate', checkAdminMode);
+    return () => window.removeEventListener('popstate', checkAdminMode);
+  }, []);
   
   const filteredProjects = activeCategory === 'all' 
     ? projects 
@@ -144,6 +140,9 @@ export default function PortfolioSection() {
           />
         </div>
         
+        {/* Admin uploader tool - only visible when ?admin=true in URL */}
+        <PortfolioUploader isAdmin={isAdmin} />
+        
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           initial={{ opacity: 0 }}
@@ -162,7 +161,7 @@ export default function PortfolioSection() {
             >
               <div className="aspect-w-4 aspect-h-3 relative">
                 <div className="w-full h-64 overflow-hidden">
-                  <project.ImageComponent />
+                  <PortfolioItem id={project.id} altText={project.altText} />
                 </div>
                 <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6 text-white">
