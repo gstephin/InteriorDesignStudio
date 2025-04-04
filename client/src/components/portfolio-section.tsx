@@ -2,15 +2,15 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 // Define direct URLs to images in the public folder
-const image1 = "/attached_assets/WhatsApp Image 2025-01-10 at 10.35.05 PM.jpeg";
-const image2 = "/attached_assets/WhatsApp Image 2025-01-10 at 10.35.10 PM (1).jpeg";
-const image3 = "/attached_assets/WhatsApp Image 2025-01-10 at 10.35.10 PM.jpeg";
-const image4 = "/attached_assets/WhatsApp Image 2025-01-10 at 10.35.15 PM.jpeg";
-const image5 = "/attached_assets/WhatsApp Image 2025-01-10 at 10.35.23 PM.jpeg";
-const image6 = "/attached_assets/WhatsApp Image 2025-01-10 at 10.35.26 PM (1).jpeg";
-const image7 = "/attached_assets/WhatsApp Image 2025-01-10 at 10.35.26 PM.jpeg";
-const image8 = "/attached_assets/WhatsApp Image 2025-01-10 at 10.35.28 PM (1).jpeg";
-const image9 = "/attached_assets/WhatsApp Image 2025-01-10 at 10.35.29 PM.jpeg";
+const image1 = "/images/WhatsApp Image 2025-01-10 at 10.35.05 PM.jpeg";
+const image2 = "/images/WhatsApp Image 2025-01-10 at 10.35.10 PM (1).jpeg";
+const image3 = "/images/WhatsApp Image 2025-01-10 at 10.35.10 PM.jpeg";
+const image4 = "/images/WhatsApp Image 2025-01-10 at 10.35.15 PM.jpeg";
+const image5 = "/images/WhatsApp Image 2025-01-10 at 10.35.23 PM.jpeg";
+const image6 = "/images/WhatsApp Image 2025-01-10 at 10.35.26 PM (1).jpeg";
+const image7 = "/images/WhatsApp Image 2025-01-10 at 10.35.26 PM.jpeg";
+const image8 = "/images/WhatsApp Image 2025-01-10 at 10.35.28 PM (1).jpeg";
+const image9 = "/images/WhatsApp Image 2025-01-10 at 10.35.29 PM.jpeg";
 
 // Project types
 type ProjectCategory = 'all' | 'residential' | 'commercial' | 'modern' | 'traditional';
