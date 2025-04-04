@@ -1,8 +1,6 @@
 import Header from '@/components/header';
 import HeroSection from '@/components/hero-section';
-import FeaturedProjects from '@/components/featured-projects';
 import ServicesSection from '@/components/services-section';
-import PortfolioSection from '@/components/portfolio-section';
 import AboutSection from '@/components/about-section';
 import ContactSection from '@/components/contact-section';
 import CTASection from '@/components/cta-section';
@@ -14,9 +12,7 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
-        <FeaturedProjects />
         <ServicesSection />
-        <PortfolioSection />
         <AboutSection />
         <ContactSection />
         <CTASection />
