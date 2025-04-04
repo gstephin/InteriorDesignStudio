@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-// Use the new SVG placeholders
-const image1 = "/portfolio-images/interior1.svg";
-const image2 = "/portfolio-images/interior2.svg";
-const image3 = "/portfolio-images/interior3.svg";
-const image4 = "/portfolio-images/interior4.svg";
-const image5 = "/portfolio-images/interior5.svg";
-const image6 = "/portfolio-images/interior6.svg";
-const image7 = "/portfolio-images/interior7.svg";
-const image8 = "/portfolio-images/interior8.svg";
-const image9 = "/portfolio-images/interior9.svg";
+// Use simple image paths
+const image1 = "/assets/portfolio/img1.png";
+const image2 = "/assets/portfolio/img2.png";
+const image3 = "/assets/portfolio/img3.png";
+const image4 = "/assets/portfolio/img4.png";
+const image5 = "/assets/portfolio/img5.png";
+const image6 = "/assets/portfolio/img6.png";
+const image7 = "/assets/portfolio/img7.png";
+const image8 = "/assets/portfolio/img8.png";
+const image9 = "/assets/portfolio/img9.png";
 
 // Project types
 type ProjectCategory = 'all' | 'residential' | 'commercial' | 'modern' | 'traditional';
