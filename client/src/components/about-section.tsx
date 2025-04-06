@@ -18,7 +18,9 @@ export default function AboutSection() {
             </h2>
             <div className="w-20 h-1 bg-[#A67F5D] mb-6"></div>
             <p className="text-gray-600 mb-4">
-              Founded in 2010, Ktisis Interiors has established itself as a premier interior design studio known for creating spaces that are both beautiful and functional.
+              Established in 2010, Ktisis Interiors has grown into one of Kochi’s leading interior design studios, renowned for crafting spaces that are as functional as they are visually stunning.
+
+              Our multidisciplinary team of designers blends architectural insight, interior styling, and strategic space planning to offer tailored design solutions that consistently exceed expectations.
             </p>
             <p className="text-gray-600 mb-6">
               Our team of talented designers brings together expertise in architecture, interior styling, and space planning to deliver comprehensive design solutions that exceed client expectations.
@@ -29,7 +31,7 @@ export default function AboutSection() {
                 Our Approach
               </h3>
               <p className="text-gray-600">
-                We believe that great design begins with understanding our clients' needs, lifestyle, and aspirations. By combining thoughtful planning with creative vision, we create spaces that are not only aesthetically pleasing but also enhances the way you live, work, and interact.
+                We believe exceptional design begins with truly understanding our clients—their lifestyle, needs, and vision. Through a thoughtful, collaborative approach, we transform ideas into spaces that inspire, uplift, and enhance everyday living.
               </p>
             </div>
             
