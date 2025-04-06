@@ -16,63 +16,63 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Modern Living Room Design",
+    title: "Luxury Bedroom Suite",
     categories: ['residential', 'modern'],
     imagePath: "/assets/portfolio/img1.png",
     altText: "Modern living room with elegant furniture"
   },
   {
     id: 2,
-    title: "Kitchen Renovation",
+    title: "Bedroom Suite",
     categories: ['residential', 'modern'],
     imagePath: "/assets/portfolio/img2.png",
     altText: "Contemporary kitchen design with minimalist elements"
   },
   {
     id: 3,
-    title: "Luxury Bedroom Suite",
+    title: "Modern Living Room Design",
     categories: ['residential', 'traditional'],
     imagePath: "/assets/portfolio/img3.png",
     altText: "Luxurious bedroom with custom furniture"
   },
   {
     id: 4,
-    title: "Office Space Design",
+    title: "Traditional Dining Area",
     categories: ['commercial', 'modern'],
     imagePath: "/assets/portfolio/img4.png",
     altText: "Modern office space design with ergonomic features"
   },
   {
     id: 5,
-    title: "Traditional Dining Area",
+    title: "Modular Kitchen",
     categories: ['residential', 'traditional'],
     imagePath: "/assets/portfolio/img5.png",
     altText: "Traditional dining room with elegant details"
   },
   {
     id: 6,
-    title: "Contemporary Bathroom",
+    title: "Modular Kitchen",
     categories: ['residential', 'modern'],
     imagePath: "/assets/portfolio/img6.png",
     altText: "Contemporary bathroom design with luxury fixtures"
   },
   {
     id: 7,
-    title: "Hotel Lobby Design",
+    title: "Prayer Unit",
     categories: ['commercial', 'modern'],
     imagePath: "/assets/portfolio/img7.png",
     altText: "Elegant hotel lobby with custom lighting"
   },
   {
     id: 8,
-    title: "Classic Living Space",
+    title: "Wash Counter Unit",
     categories: ['residential', 'traditional'],
     imagePath: "/assets/portfolio/img8.png",
     altText: "Classic living room with traditional elements"
   },
   {
     id: 9,
-    title: "Executive Office Suite",
+    title: "Tv Unit",
     categories: ['commercial', 'modern'],
     imagePath: "/assets/portfolio/img9.png",
     altText: "Executive office with premium design elements"
