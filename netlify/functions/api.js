@@ -1,9 +1,18 @@
 import express from 'express';
 import serverless from 'serverless-http';
+import nodemailer from 'nodemailer';
 
 // Create a simpler Express app for Netlify functions
 const app = express();
 app.use(express.json());
+
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD
+  }
+});
 
 // Simple in-memory storage for development and demo purposes
 const contactSubmissions = [];
@@ -28,8 +37,28 @@ app.post('/.netlify/functions/api/contact', async (req, res) => {
     // Add to in-memory storage
     contactSubmissions.push(newSubmission);
     
-    // For development logging
-    console.log('New contact submission:', newSubmission);
+    // Send email notification
+    const mailOptions = {
+      from: process.env.EMAIL_USER,
+      to: 'gstephin87@gmail.com',
+      subject: 'New Contact Form Submission',
+      html: `
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+        <p><strong>Service:</strong> ${service || 'Not provided'}</p>
+        <p><strong>Message:</strong> ${message}</p>
+        <p><strong>Submitted At:</strong> ${submittedAt}</p>
+      `
+    };
+
+    try {
+      await transporter.sendMail(mailOptions);
+      console.log('Email notification sent');
+    } catch (emailError) {
+      console.error('Error sending email notification:', emailError);
+    }
     
     return res.status(201).json(newSubmission);
   } catch (error) {
