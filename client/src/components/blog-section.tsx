@@ -10,7 +10,7 @@ interface BlogPost {
   date: string;
 }
 
-const blogPosts: BlogPost[] = [
+export const blogPosts: BlogPost[] = [
   {
     id: 1,
     title: "Modern Minimalism in Interior Design",
@@ -79,7 +79,10 @@ export default function BlogSection() {
                 <p className="text-gray-600 mb-4">
                   {post.excerpt}
                 </p>
-                <Button className="bg-[#A67F5D] hover:bg-opacity-90 text-white">
+                <Button 
+                  className="bg-[#A67F5D] hover:bg-opacity-90 text-white"
+                  onClick={() => window.location.href = `/blog/${post.id}`}
+                >
                   Read More
                 </Button>
               </div>

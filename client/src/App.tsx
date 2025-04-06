@@ -12,6 +12,7 @@ function Router() {
     <Switch>
       {/* Add pages below */}
       <Route path="/" component={HomePage} />
+      <Route path="/blog/:id" component={BlogDetail} />
       <Route path="/admin" component={AdminPage} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
