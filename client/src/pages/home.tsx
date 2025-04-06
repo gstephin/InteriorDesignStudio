@@ -4,6 +4,7 @@ import ServicesSection from '@/components/services-section';
 import AboutSection from '@/components/about-section';
 import PortfolioSection from '@/components/portfolio-section';
 import ContactSection from '@/components/contact-section';
+import BlogSection from '@/components/blog-section';
 import CTASection from '@/components/cta-section';
 import Footer from '@/components/footer';
 
@@ -16,6 +17,7 @@ export default function HomePage() {
         <ServicesSection />
         <AboutSection />
         <PortfolioSection />
+        <BlogSection />
         <ContactSection />
         <CTASection />
       </main>
