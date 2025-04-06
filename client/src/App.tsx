@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import HomePage from "@/pages/home";
 import AdminPage from "@/pages/admin";
+import BlogDetail from "@/pages/blog-detail";
 import "./fonts.css";
 
 function Router() {
