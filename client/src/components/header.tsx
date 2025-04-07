@@ -39,8 +39,11 @@ export default function Header() {
       scrolled ? "shadow-md" : "shadow-sm"
     )}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center gap-3">
           <img src="/assets/logo_transparent.png" alt="Ktisis Interiors" className="h-12 w-auto" />
+          <span className="text-2xl font-bold font-heading text-[#3A3A3A]">
+            Ktisis <span className="text-[#A67F5D]">Interiors</span>
+          </span>
         </Link>
         
         {/* Desktop Navigation */}
