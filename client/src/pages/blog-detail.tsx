@@ -4,6 +4,7 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { useRoute } from 'wouter';
 import { blogPosts } from '@/components/blog-section';
+import { motion } from 'framer-motion';
 
 export default function BlogDetail() {
   const [, params] = useRoute<{ id: string }>('/blog/:id');
@@ -18,7 +19,12 @@ export default function BlogDetail() {
       <Header />
       <main className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
+          <motion.div 
+            className="max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             <img
               src={post.imageUrl}
               alt={post.title}
@@ -29,11 +35,13 @@ export default function BlogDetail() {
             </h1>
             <div className="text-gray-500 mb-8">{post.date}</div>
             <div className="prose max-w-none">
-              <p className="text-gray-600 text-lg mb-4">{post.excerpt}</p>
-              {/* Content placeholder */}
-              <p className="text-gray-600">Full content will be added later.</p>
+              {post.content.split('\n').map((paragraph, index) => (
+                <p key={index} className="text-gray-600 text-lg mb-4">
+                  {paragraph.trim()}
+                </p>
+              ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </main>
       <Footer />
