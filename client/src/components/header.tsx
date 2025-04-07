@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'wouter';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Instagram, Facebook, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -47,21 +47,34 @@ export default function Header() {
         </Link>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection(link.href);
-              }}
-              className="text-[#3A3A3A] hover:text-[#A67F5D] transition-colors font-medium"
-            >
-              {link.label}
+        <div className="hidden md:flex items-center">
+          <nav className="flex space-x-8 mr-8">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(link.href);
+                }}
+                className="text-[#3A3A3A] hover:text-[#A67F5D] transition-colors font-medium"
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+          <div className="flex space-x-4">
+            <a href="https://www.instagram.com/ktisis_interiors/" target="_blank" rel="noopener noreferrer" className="text-[#3A3A3A] hover:text-[#A67F5D] transition-colors">
+              <Instagram size={20} />
             </a>
-          ))}
-        </nav>
+            <a href="https://www.facebook.com/ktisisinteriors" target="_blank" rel="noopener noreferrer" className="text-[#3A3A3A] hover:text-[#A67F5D] transition-colors">
+              <Facebook size={20} />
+            </a>
+            <a href="https://wa.me/919947386281" target="_blank" rel="noopener noreferrer" className="text-[#3A3A3A] hover:text-[#A67F5D] transition-colors">
+              <Phone size={20} />
+            </a>
+          </div>
+        </div>
         
         {/* Mobile Menu Button */}
         <Button 
