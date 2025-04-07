@@ -24,10 +24,10 @@ Discover how to create a minimalist interior that maximizes both style and funct
 
 Minimalism is more than just a design trend—it's a lifestyle choice. In a world increasingly filled with distractions and clutter, modern minimalism offers a refreshing return to simplicity, clarity, and purpose. At Ktisis Interiors, we believe design should be intentional, timeless, and functional.
 
-✨ <strong>What Is Modern Minimalism?</strong>  
+✨ What Is Modern Minimalism?  
 Modern minimalism merges the sleek simplicity of minimalist design principles with the warmth and functionality of modern living. It strips away the unnecessary while keeping the essential—and beautiful—elements in focus. Think fewer but better pieces, neutral color palettes, and thoughtfully chosen decor that serves a purpose. Our minimalist interior design services are crafted to help clients achieve this balance.
 
-🛋️ <strong>Key Elements of a Minimalist Interior</strong>
+🛋️ Key Elements of a Minimalist Interior
 - Neutral Colors: Whites, grays, and earth tones create a calm and timeless foundation.
 - Clean Lines: Furniture with simple shapes and minimal ornamentation keeps spaces visually light.
 - Functional Decor: Every item should have a purpose—be it practical use or aesthetic value.
@@ -36,23 +36,23 @@ Modern minimalism merges the sleek simplicity of minimalist design principles wi
 
 Explore our portfolio to see how we integrate these elements into modern homes.
 
-🧩 <strong>How to Create a Minimalist Home</strong>
-1. <strong>Declutter Ruthlessly</strong>  
+🧩 How to Create a Minimalist Home
+1. Declutter Ruthlessly  
    Start by removing anything that doesn’t serve a purpose or spark joy. At Ktisis Interiors, we help clients reimagine their spaces with a focus on mindful design.
 
-2. <strong>Choose Quality Over Quantity</strong>  
+2. Choose Quality Over Quantity  
    Invest in a few high-quality pieces that are both functional and elegant.
 
-3. <strong>Stick to a Unified Palette</strong>  
+3. Stick to a Unified Palette  
    A consistent color scheme throughout the home creates harmony and flow—something we consider in every project.
 
-4. <strong>Add Warmth Through Texture</strong>  
+4. Add Warmth Through Texture  
    Incorporate materials like wood, linen, or stone to maintain a cozy feel even in a clean, minimalist layout.
 
-5. <strong>Keep It Personal (But Subtle)</strong>  
+5. Keep It Personal (But Subtle)  
    Minimalism doesn’t mean impersonal. Through curated decor and custom finishes, we ensure every space tells your story.
 
-🌿 <strong>The Benefits of Minimalist Living</strong>
+🌿 The Benefits of Minimalist Living
 - Reduced stress and visual noise
 - Easier cleaning and maintenance
 - Greater focus and mental clarity
@@ -60,7 +60,7 @@ Explore our portfolio to see how we integrate these elements into modern homes.
 
 Let Ktisis Interiors help you create a peaceful, purposeful environment that enhances your everyday life.
 
-✅ <strong>Final Thoughts</strong>  
+✅ Final Thoughts  
 Modern minimalism isn’t about living without—it’s about living with intention. By embracing simplicity and focusing on what truly matters, you can create a home that feels calm, elegant, and effortlessly stylish.
 
 Explore more about minimalist design and timeless comfort in our portfolio section.`,
