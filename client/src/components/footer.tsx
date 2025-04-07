@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/assets/logo_transparent.png" alt="Ktisis Interiors" className="h-16 w-auto" />
+              <img src="/assets/logo.png" alt="Ktisis Interiors" className="h-16 w-auto" />
               <span className="text-2xl font-bold font-heading">
                 Ktisis <span className="text-[#A67F5D]">Interiors</span>
               </span>
