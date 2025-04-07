@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://ktisisinteriors.netlify.app/sitemap.xml
+Sitemap: https://ktisisinteriors.com/sitemap.xml
