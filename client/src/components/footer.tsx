@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/assets/logo_transparent.png" alt="Ktisis Interiors" className="h-12 w-auto" />
+              <img src="/assets/logo_transparent.png" alt="Ktisis Interiors" className="h-16 w-auto" />
               <span className="text-2xl font-bold font-heading">
                 Ktisis <span className="text-[#A67F5D]">Interiors</span>
               </span>
@@ -41,7 +41,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
@@ -67,7 +67,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
@@ -86,7 +86,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Newsletter</h4>
             <p className="text-gray-300 mb-4">
@@ -104,7 +104,7 @@ export default function Footer() {
             </form>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} Ktisis Interiors. All rights reserved.
