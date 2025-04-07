@@ -22,10 +22,10 @@ export const blogPosts: BlogPost[] = [
 Modern Minimalism in Interior Design  
 Discover how to create a minimalist interior that maximizes both style and functionality.
 
-Minimalism is more than just a design trend—it's a lifestyle choice. In a world increasingly filled with distractions and clutter, modern minimalism offers a refreshing return to simplicity, clarity, and purpose. At <a href="https://ktisisinteriors.com" target="_blank" rel="noopener noreferrer">Ktisis Interiors</a>, we believe design should be intentional, timeless, and functional.
+Minimalism is more than just a design trend—it's a lifestyle choice. In a world increasingly filled with distractions and clutter, modern minimalism offers a refreshing return to simplicity, clarity, and purpose. At Ktisis Interiors, we believe design should be intentional, timeless, and functional.
 
 ✨ <strong>What Is Modern Minimalism?</strong>  
-Modern minimalism merges the sleek simplicity of minimalist design principles with the warmth and functionality of modern living. It strips away the unnecessary while keeping the essential—and beautiful—elements in focus. Think fewer but better pieces, neutral color palettes, and thoughtfully chosen decor that serves a purpose. Our <a href="https://ktisisinteriors.com/services" target="_blank" rel="noopener noreferrer">minimalist interior design services</a> are crafted to help clients achieve this balance.
+Modern minimalism merges the sleek simplicity of minimalist design principles with the warmth and functionality of modern living. It strips away the unnecessary while keeping the essential—and beautiful—elements in focus. Think fewer but better pieces, neutral color palettes, and thoughtfully chosen decor that serves a purpose. Our minimalist interior design services are crafted to help clients achieve this balance.
 
 🛋️ <strong>Key Elements of a Minimalist Interior</strong>
 - Neutral Colors: Whites, grays, and earth tones create a calm and timeless foundation.
@@ -34,11 +34,11 @@ Modern minimalism merges the sleek simplicity of minimalist design principles wi
 - Open Space: Avoid overcrowding. Embrace open layouts that give the room room to breathe.
 - Natural Light: Large windows, sheer curtains, and light-reflecting surfaces enhance brightness and openness.
 
-Explore our <a href="https://ktisisinteriors.com/portfolio" target="_blank" rel="noopener noreferrer">portfolio</a> to see how we integrate these elements into modern homes.
+Explore our portfolio to see how we integrate these elements into modern homes.
 
 🧩 <strong>How to Create a Minimalist Home</strong>
 1. <strong>Declutter Ruthlessly</strong>  
-   Start by removing anything that doesn’t serve a purpose or spark joy. At <a href="https://ktisisinteriors.com/services" target="_blank" rel="noopener noreferrer">Ktisis Interiors</a>, we help clients reimagine their spaces with a focus on mindful design.
+   Start by removing anything that doesn’t serve a purpose or spark joy. At Ktisis Interiors, we help clients reimagine their spaces with a focus on mindful design.
 
 2. <strong>Choose Quality Over Quantity</strong>  
    Invest in a few high-quality pieces that are both functional and elegant.
@@ -58,12 +58,12 @@ Explore our <a href="https://ktisisinteriors.com/portfolio" target="_blank" rel=
 - Greater focus and mental clarity
 - A home that reflects intentional living
 
-Let <a href="https://ktisisinteriors.com/contact" target="_blank" rel="noopener noreferrer">Ktisis Interiors</a> help you create a peaceful, purposeful environment that enhances your everyday life.
+Let Ktisis Interiors help you create a peaceful, purposeful environment that enhances your everyday life.
 
 ✅ <strong>Final Thoughts</strong>  
 Modern minimalism isn’t about living without—it’s about living with intention. By embracing simplicity and focusing on what truly matters, you can create a home that feels calm, elegant, and effortlessly stylish.
 
-Explore more on <a href="https://ktisisinteriors.com" target="_blank" rel="noopener noreferrer">ktisisinteriors.com</a> — where minimalist design meets timeless comfort.`,
+Explore more about minimalist design and timeless comfort in our portfolio section.`,
     imageUrl:
       "https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=600&q=80",
     date: "June 15, 2023",
