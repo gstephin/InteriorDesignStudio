@@ -1,0 +1,6 @@
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://ktisisinteriors.netlify.app/sitemap.xml
