@@ -76,11 +76,7 @@ export default function AboutSection() {
             transition={{ duration: 0.6 }}
           >
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1600607687644-c7f34b1d1563?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=1000&q=80" 
-                alt="Interior design studio workspace" 
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
+      
               <motion.div 
                 className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg hidden md:block"
                 initial={{ opacity: 0, y: 20 }}
